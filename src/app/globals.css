@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-playfair: 'Playfair Display', serif;
+  --font-lora: 'Lora', serif;
+
+  --color-primary: #1b2a38;
+  --color-accent: #2a9d8f;
+  --color-hero: #031b33;
+  --color-explore-bg: #e8f0eb;
+  --color-footer-bg: #0d1f2d;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased;
+    font-family: var(--font-lora);
+    color: var(--color-primary);
+  }
+}
