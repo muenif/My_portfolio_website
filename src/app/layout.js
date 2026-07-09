@@ -3,18 +3,60 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Dr. Faith Mueni | Academic Portfolio',
+  metadataBase: new URL('https://www.drfaithmueni.com'),
+  title: {
+    default: 'Dr. Faith Mueni Musyoka | Senior Lecturer & Researcher',
+    template: '%s | Dr. Faith Mueni Musyoka',
+  },
   description:
-    'Official academic portfolio of Dr. Faith Mueni — researcher, educator, and scholar. Explore research, publications, grants, and teaching.',
-  keywords: ['Dr Faith Mueni', 'research', 'academic', 'publications', 'teaching'],
+    'Official academic portfolio of Dr. Faith Mueni Musyoka — Senior Lecturer in Computing & Information Technology, researcher in AI, Health Informatics, and Data Governance at University of Embu, Kenya.',
+  keywords: [
+    'Dr Faith Mueni',
+    'Faith Mueni Musyoka',
+    'University of Embu',
+    'Artificial Intelligence Kenya',
+    'Health Informatics',
+    'Data Governance',
+    'Machine Learning Kenya',
+    'Senior Lecturer Computing',
+    'IoT Kenya',
+    'Research Kenya',
+    'Academic Portfolio Kenya',
+    'Computing Information Technology',
+  ],
+  authors: [{ name: 'Dr. Faith Mueni Musyoka' }],
+  creator: 'Dr. Faith Mueni Musyoka',
   openGraph: {
-    title: 'Dr. Faith Mueni | Academic Portfolio',
-    description:
-      'Explore the research, publications, and academic contributions of Dr. Faith Mueni.',
-    url: 'https://drfaithmueni.com',
-    siteName: 'Dr. Faith Mueni',
-    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
     type: 'website',
+    locale: 'en_KE',
+    url: 'https://www.drfaithmueni.com',
+    siteName: 'Dr. Faith Mueni Musyoka',
+    title: 'Dr. Faith Mueni Musyoka | Senior Lecturer & Researcher',
+    description:
+      'Explore the research, publications, grants, and academic contributions of Dr. Faith Mueni Musyoka — Senior Lecturer at University of Embu, Kenya.',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Dr. Faith Mueni Musyoka — Senior Lecturer & Researcher',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Dr. Faith Mueni Musyoka | Senior Lecturer & Researcher',
+    description:
+      'Explore the research, publications, grants, and academic contributions of Dr. Faith Mueni Musyoka.',
+    images: ['/images/og-image.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
