@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import JourneySection from '@/components/about/JourneySection';
-import { GraduationCap, Users, Lightbulb, Mail } from 'lucide-react';
+import RequestCVButton from '@/components/about/RequestCVButton';
+import { GraduationCap, Users, Lightbulb } from 'lucide-react';
 import { inspirations, journeyParagraphs, education, stats, expertiseTags, quote } from '@/data/aboutData';
 
 export const metadata = {
@@ -38,16 +39,7 @@ export default function AboutPage() {
           >
             About Me
           </h2>
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=faithmueni24@gmail.com&su=CV%20Request%20%7C%20Dr.%20Faith%20Mueni&body=Dear%20Dr.%20Faith%20Mueni%2C%0A%0AI%20am%20writing%20to%20request%20a%20copy%20of%20your%20CV.%0A%0AKind%20regards%2C"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ backgroundColor: '#2a9d8f', color: '#ffffff', fontFamily: "'Lora', serif" }}
-            className="flex items-center gap-2 text-sm px-4 py-2 rounded hover:opacity-90 transition-all"
-          >
-            <Mail size={14} />
-            Request CV
-          </a>
+          <RequestCVButton />
         </div>
 
         {/* Two Column: Image + Journey & Education */}
