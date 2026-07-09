@@ -26,6 +26,9 @@ export const metadata = {
   ],
   authors: [{ name: 'Dr. Faith Mueni Musyoka' }],
   creator: 'Dr. Faith Mueni Musyoka',
+  verification: {
+    google: 'MUFZ1dDqQe9F305_sQOOIYpmmf9gIk07d_DutYlEKTg',  
+  },
   openGraph: {
     type: 'website',
     locale: 'en_KE',
