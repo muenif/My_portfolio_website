@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { Mail } from 'lucide-react';
 
 const TO = 'faithmueni24@gmail.com';
@@ -15,20 +16,20 @@ const MAILTO_URL = `mailto:${TO}?subject=${encodeURIComponent(SUBJECT)}&body=${e
 )}`;
 
 export default function RequestCVButton() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent));
+  }, []);
+
   const handleClick = (e) => {
+    // On mobile, let the browser handle the mailto: link natively —
+    // this is what reliably opens the native mail app pre-composed.
+    if (isMobile) return;
+
+    // On desktop, override the default mailto and open Gmail web compose instead.
     e.preventDefault();
-
-    const isMobile =
-      typeof navigator !== 'undefined' &&
-      /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-    if (isMobile) {
-      // Opens the phone's native mail app with the message pre-composed
-      window.location.href = MAILTO_URL;
-    } else {
-      // Opens Gmail web compose in a new tab on desktop
-      window.open(GMAIL_WEB_URL, '_blank', 'noopener,noreferrer');
-    }
+    window.open(GMAIL_WEB_URL, '_blank', 'noopener,noreferrer');
   };
 
   return (
