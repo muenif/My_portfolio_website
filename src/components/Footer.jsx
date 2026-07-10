@@ -66,33 +66,7 @@ export default function Footer() {
           </div>
         ))}
 
-        {/* Contact */}
-        <div>
-          <h4 className="font-lora text-xs tracking-widest uppercase text-accent mb-4">
-            Contact
-          </h4>
-          <ul className="space-y-3">
-            <li className="flex items-start gap-2 text-white/60">
-              <Mail size={13} className="mt-0.5 flex-shrink-0 text-accent" />
-              <a
-                href="mailto:mueni.faith@embuni.ac.ke"
-                className="font-lora text-xs hover:text-white transition-colors"
-              >
-                mueni.faith@embuni.ac.ke
-                or
-                faithmueni24@gmail.com
-              </a>
-            </li>
-            <li className="flex items-start gap-2 text-white/60">
-              <Phone size={13} className="mt-0.5 flex-shrink-0 text-accent" />
-              <span className="font-lora text-xs">+254 737766052</span>
-            </li>
-            <li className="flex items-start gap-2 text-white/60">
-              <MapPin size={13} className="mt-0.5 flex-shrink-0 text-accent" />
-              <span className="font-lora text-xs">University of Embu, Kenya.</span>
-            </li>
-          </ul>
-        </div>
+       
       </div>
 
       {/* Bottom Bar */}

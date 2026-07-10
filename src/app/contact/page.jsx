@@ -287,28 +287,10 @@ export default function ContactPage() {
               </h4>
 
               <div className="space-y-4 mb-5">
+                </div>
+
                 <div className="flex items-start gap-3">
                   <Mail size={16} style={{ color: '#2a9d8f' }} className="flex-shrink-0 mt-0.5" />
-                  <div className="text-xs" style={{ fontFamily: "'Lora', serif", color: '#1b2a38' }}>
-                    <a href="mailto:faithmueni24@gmail.com" className="hover:underline block">
-                      faithmueni24@gmail.com
-                    </a>
-                    <a href="mailto:mueni.faith@embuni.ac.ke" className="hover:underline block">
-                      mueni.faith@embuni.ac.ke
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Phone size={16} style={{ color: '#2a9d8f' }} className="flex-shrink-0 mt-0.5" />
-                  <div className="text-xs" style={{ fontFamily: "'Lora', serif", color: '#1b2a38' }}>
-                    <p>+254 713 793 373</p>
-                    <p>+254 737 766 052</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <MapPin size={16} style={{ color: '#2a9d8f' }} className="flex-shrink-0 mt-0.5" />
                   <p className="text-xs" style={{ fontFamily: "'Lora', serif", color: '#1b2a38' }}>
                     P.O. Box 450–90200, Kitui, Kenya
                   </p>
@@ -330,6 +312,4 @@ export default function ContactPage() {
 
         </div>
       </div>
-    </div>
-  );
-}
+  );}
